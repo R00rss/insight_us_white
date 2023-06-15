@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Saludo estándar",
+      "description": "Cumple con: Saludo Estándar: Buenos días/tardes/noches, Despedida Estándar: Gracias por su visita, buenos días/tardes/noches",
+      "percentage": 30,
+      "calf": 30
+    },
+    {
+      "id": 2,
+      "name": "Contacto visual",
+      "description": "Contacto visual cuando se dirija al cliente",
+      "percentage": 20,
+      "calf": 20
+    },
+    {
+      "id": 3,
+      "name": "Apellido cliente",
+      "description": "Menciona el apellido del cliente",
+      "percentage": 20,
+      "calf": 20
+    },
+    {
+      "id": 4,
+      "name": "Informa al cliente",
+      "description": "Informa al cliente la acción que está realizando",
+      "percentage": 10,
+      "calf": 10
+    },
+    {
+      "id": 5,
+      "name": "Información efectiva",
+      "description": "Confirma la transacción y/o brinda la información efectiva (correcta y completa) (cuando el cliente solo solicita información o direccionamiento)",
+      "percentage": 10,
+      "calf": 10
+    },
+    {
+      "id": 6,
+      "name": "Cierre correcto",
+      "description": "Menciona: Algo más en que pueda servirle",
+      "percentage": 20,
+      "calf": 20
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+.activeText {
+  /* text-shadow: 1px 1px 8px #0000005e; */
+  /* text-shadow: 1px 1px 10px #0ca5ec; */
+}
+.activeBox {
+  background-color: var(--green-produ-primary);
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #000000;
+}
+.item:hover {
+  /* background-color: var(--green-produ-tertiary); */
+  /* background-color: #6baf472b; */
+  /* color: #ffffff; */
+  box-shadow: 0px 0px 8px 1px #52d9b05e;
+}
+
+.activeBoxSubItem {
+  background-color: var(--green-produ-secondary);
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #000000;
+}
+.itemSubmenu:hover {
+  /* background-color: var(--green-produ-tertiary); */
+  /* background-color: #6baf472b; */
+  /* color: #ffffff; */
+  box-shadow: 0px 0px 8px 1px #52d9b05e;
+}

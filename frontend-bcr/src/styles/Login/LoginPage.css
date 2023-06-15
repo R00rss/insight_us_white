@@ -1,0 +1,101 @@
+:root {
+  --ball-login-size: 8px;
+}
+.imageKMB {
+  /* filter: saturate(3); */
+  /* filter: grayscale(100%);
+  filter: contrast(160%);
+  filter: brightness(0.25); */
+  /* filter: blur(3px); */
+  /* filter: invert(100%);
+  filter: sepia(100%);
+  filter: hue-rotate(180deg);
+  filter: opacity(50%); */
+}
+.login-container-animation {
+  animation: login-container-animation 2s ease-in-out,
+    changing-color-shadow 2s ease-in-out infinite;
+  /* transition: 1s all; */
+  border: 1px solid rgba(0, 255, 255, 0.616);
+  position: relative;
+}
+/* .ball-login-border {
+  animation: rotating-ball 6s ease-in-out infinite;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  width: var(--ball-login-size);
+  height: var(--ball-login-size);
+  background-color: rgb(0, 17, 255);
+} */
+
+@keyframes rotating-ball {
+  0% {
+    top: calc(var(--ball-login-size) * -1);
+    left: calc(var(--ball-login-size) * -1);
+  }
+  25% {
+    top: calc(var(--ball-login-size) * -1);
+    left: 100%;
+  }
+  50% {
+    top: 100%;
+    left: 100%;
+  }
+  75% {
+    top: 100%;
+    left: calc(var(--ball-login-size) * -1);
+  }
+  100% {
+    top: calc(var(--ball-login-size) * -1);
+    left: calc(var(--ball-login-size) * -1);
+  }
+}
+@keyframes changing-color-shadow {
+  25% {
+    box-shadow: 0px 0px 15px 0px rgb(37, 164, 196);
+  }
+  50% {
+    box-shadow: 0px 0px 15px 0px rgb(37, 111, 196);
+  }
+  75% {
+    box-shadow: 0px 0px 15px 0px rgb(37, 164, 196);
+  }
+  0%,100% {
+    box-shadow: 0px 0px 15px 0px rgb(37, 196, 188);
+  }
+}
+@keyframes login-container-animation {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+  20% {
+    height: 0;
+    border: 0.4px solid cyan;
+    width: 0;
+    opacity: 0;
+  }
+
+  30% {
+    width: 0;
+    height: 450px;
+    border: 1px solid rgba(0, 255, 255, 0.281);
+    opacity: 0;
+    padding: 0.2;
+  }
+
+  70% {
+    opacity: 0.8;
+    width: 350px;
+    border: 1px solid rgba(0, 255, 255, 0.616);
+  }
+  100% {
+    opacity: 1;
+    width: 350px;
+    border: 0.4px solid rgba(0, 255, 255, 0.068);
+  }
+}

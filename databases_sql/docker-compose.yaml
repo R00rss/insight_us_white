@@ -1,0 +1,25 @@
+version: '3.3'
+services:
+  db:
+    # name of container
+    container_name: mysql_metricas
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: dev_metricas
+      # MYSQL_DATABASE: test
+    volumes:
+      - ./metricas_14_05.sql:/docker-entrypoint-initdb.d/metricas_14_05.sql
+    ports:
+      - 4002:3306
+    command: mysqld --sql_mode="" --character-set-server=utf8 --collation-server=utf8_slovenian_ci --init-connect='SET NAMES UTF8;' --innodb-flush-log-at-trx-commit=0
+
+  phpmyadmin:
+    container_name: phpmyadmin_metricas
+    image: phpmyadmin/phpmyadmin:latest
+    restart: always
+    ports:
+      - 4003:80
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: dev_metricas

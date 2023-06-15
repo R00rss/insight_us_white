@@ -1,0 +1,6 @@
+.hover-sidebar:hover {
+  @apply bg-[#6ce6a5] text-[#ffffff] font-bold;
+}
+.hover-sidebar {
+  @apply rounded-r-2xl;
+}
